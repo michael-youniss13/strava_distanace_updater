@@ -10,6 +10,7 @@ module.exports = async (req, res) => {
     const verifyToken = query['hub.verify_token'];
     const challenge = query['hub.challenge'];
 
+    
     if (hubMode === 'subscribe' && verifyToken === process.env.VERIFY_TOKEN) {
       // Respond with the challenge to verify the webhook
       res.status(200).json({ 'hub.challenge': challenge });
