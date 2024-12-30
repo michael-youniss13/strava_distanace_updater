@@ -12,6 +12,8 @@ module.exports = async (req, res) => {
 
     if (hubMode === 'subscribe' && verifyToken === process.env.VERIFY_TOKEN) {
       // Respond with the challenge to verify the webhook
+      print("challenge:")
+      print(challenge)
       res.status(200).json({ 'hub.challenge': challenge });
     } else {
       res.status(403).send('Forbidden');
