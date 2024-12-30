@@ -1,0 +1,12 @@
+{
+  "name": "strava_distanace_updater",
+  "version": "1.0.0",
+  "description": "1) Set up ngrok account (https://dashboard.ngrok.com/observability/traffic-inspector) 2) added app.py and secrets.txt 3) added a folder to postman 4) created Strava api, registered webhook, checked that the webhook endpoint was working     - Might need to update the urls by re-registering with updated tokens from the strava portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
