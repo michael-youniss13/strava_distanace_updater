@@ -4,7 +4,7 @@ import json
 
 app = FastAPI()
 
-@app.get("/strava/webhook")
+@app.get("/api/webhook")
 async def verify(request: Request):
     hub_mode = request.query_params.get("hub.mode")
     verify_token = request.query_params.get("hub.verify_token")
@@ -15,7 +15,7 @@ async def verify(request: Request):
     else:
         raise HTTPException(status_code=403, detail="Forbidden")
 
-@app.post("/strava/webhook")
+@app.post("/api/webhook")
 async def webhook(request: Request):
     try:
         event_data = await request.json()
