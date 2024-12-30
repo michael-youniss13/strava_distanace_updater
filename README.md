@@ -8,9 +8,7 @@
 5) [in progress] adding OAuth tokens
 
 ## Current MIT
-- new activities aren't triggering the webhook
+- Get users set up w/ bearer token, id, and activity
 
-## To run app
-1) `ngrok http 5000`
-2) `python app.py` (in a separate tab)
 
+## 
